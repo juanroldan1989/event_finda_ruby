@@ -1,0 +1,2 @@
+== event_finda_ruby
+(Work in progress) Ruby gem to interact with EventFinda's API - www.eventfinda.co.nz
