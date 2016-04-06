@@ -24,4 +24,19 @@ describe Base do
   it "should have a default URL" do
     @event_finda_ruby.url.must_equal "#{Base::BASE_URL}.#{@event_finda_ruby.api_extension}?rows=20"
   end
+
+  describe "#with_extension" do
+    it "should set api_extension to retrieve data" do
+      @event_finda_ruby.with_extension("json")
+      @event_finda_ruby.api_extension.must_equal "json"
+
+      @event_finda_ruby.with_extension("xml")
+      @event_finda_ruby.api_extension.must_equal "xml"
+    end
+
+    it "should set JSON as api_extension when wrong extension is provided" do
+      @event_finda_ruby.with_extension("other_extension")
+      @event_finda_ruby.api_extension.must_equal "json"
+    end
+  end
 end
