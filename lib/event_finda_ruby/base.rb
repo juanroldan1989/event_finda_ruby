@@ -28,7 +28,7 @@ class Base
     "#{BASE_URL}.#{api_extension}?rows=20"
   end
 
-  def use_filter(filter_name, value)
+  def apply_filter(filter_name, value)
     @url = "#{url}&#{filter_name}=#{value}"
   end
 end
