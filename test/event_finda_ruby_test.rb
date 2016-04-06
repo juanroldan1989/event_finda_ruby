@@ -30,6 +30,13 @@ describe EventFindaRuby do
   end
 
   describe "filters" do
+    describe "#by_end_date" do
+      it "should contain 'end_date' param inside URL" do
+        @event_finda_ruby.by_end_date("2016-10-25")
+        @event_finda_ruby.url.must_include "end_date=2016-10-25"
+      end
+    end
+
     describe "#by_featured" do
       it "should contain 'featured' param inside URL" do
         @event_finda_ruby.by_featured
@@ -72,8 +79,41 @@ describe EventFindaRuby do
         @event_finda_ruby.url.must_include "rows=#{rand_1_20}"
       end
     end
+
+    describe "#by_price_max" do
+      it "should contain 'price_max' param inside URL" do
+        @event_finda_ruby.by_price_max("75.0")
+        @event_finda_ruby.url.must_include "price_max=75.0"
+      end
+    end
+
+    describe "#by_price_min" do
+      it "should contain 'price_min' param inside URL" do
+        @event_finda_ruby.by_price_min("25.0")
+        @event_finda_ruby.url.must_include "price_min=25.0"
+      end
+    end
+
+    describe "#by_start_date" do
+      it "should contain 'start_date' param inside URL" do
+        @event_finda_ruby.by_start_date("2016-08-19")
+        @event_finda_ruby.url.must_include "start_date=2016-08-19"
+      end
+    end
+
+    describe "#by_ticketed" do
+      it "should contain 'ticketed' param inside URL" do
+        @event_finda_ruby.by_ticketed
+        @event_finda_ruby.url.must_include "ticketed=1"
+      end
+    end
+
+    describe "#by_username" do
+      it "should contain 'username' param inside URL" do
+        @event_finda_ruby.by_username("batman")
+        @event_finda_ruby.url.must_include "username=batman"
+      end
+    end
+
   end
 end
-
-# http://ruby-doc.org/stdlib-2.0.0/libdoc/minitest/rdoc/MiniTest.html
-# http://www.rubyinside.com/a-minitestspec-tutorial-elegant-spec-style-testing-that-comes-with-ruby-5354.html

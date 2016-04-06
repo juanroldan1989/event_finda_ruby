@@ -18,7 +18,9 @@ class EventFindaRuby
     @url           = base_path
   end
 
-  def by_end_date
+  def by_end_date(end_date)
+    @url = "#{url}&end_date=#{end_date}"
+
     self
   end
 
@@ -31,18 +33,6 @@ class EventFindaRuby
   def by_free
     @url = "#{url}&free=1"
 
-    self
-  end
-
-  def by_location_id(location_id)
-    self
-  end
-
-  def by_location_slug(location_slug)
-    self
-  end
-
-  def by_name
     self
   end
 
@@ -61,19 +51,46 @@ class EventFindaRuby
   # allowing AND/OR behavior customized by developer
   # /events.xml?q=(cycling+AND+running+AND+swimming)+OR+triathlon
   def by_query(query)
-    @url = "#{url}&q=#{query.to_s}"
+    @url = "#{url}&q=#{query}"
 
     self
   end
 
   def by_rows(rows)
-    @url = "#{url}&rows=#{rows.to_i}"
+    @url = "#{url}&rows=#{rows}"
 
     self
   end
 
-  def by_start_date
-    
+  # price_max format "35.0" or "35"
+  def by_price_max(price_max)
+    @url = "#{url}&price_max=#{price_max}"
+
+    self
+  end
+
+  # price_min format "35.0" or "35"
+  def by_price_min(price_min)
+    @url = "#{url}&price_min=#{price_min}"
+
+    self
+  end
+
+  def by_start_date(start_date)
+    @url = "#{url}&start_date=#{start_date}"
+
+    self
+  end
+
+  def by_ticketed
+    @url = "#{url}&ticketed=1"
+
+    self
+  end
+
+  def by_username(username)
+    @url = "#{url}&username=#{username}"
+
     self
   end
 
@@ -91,6 +108,7 @@ class EventFindaRuby
 
   private
 
+  # Retrieving maximum set of results by default: 20
   def base_path
     "#{BASE_URL}.#{api_extension}?rows=20"
   end
@@ -103,7 +121,3 @@ class EventFindaRuby
     keywords.to_a.join("+AND+")
   end
 end
-
-# Parameters to query the API
-# http://www.eventfinda.co.nz/api/v2/events
-# http://www.eventfinda.co.nz/api/v2/endpoints
