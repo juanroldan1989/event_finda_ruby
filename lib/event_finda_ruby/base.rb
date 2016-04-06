@@ -8,13 +8,11 @@ class Base
 
   attr_reader :api_extension
   attr_reader :auth
-  attr_reader :results
   attr_reader :url
 
   def initialize(auth)
     @api_extension = "json"
     @auth          = auth
-    @results       = []
     @url           = base_path
   end
 
