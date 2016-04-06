@@ -23,8 +23,12 @@ class Base
 
   private
 
-  # Retrieving maximum set of results by default: 20
+  # retrieving maximum set of results by default: 20
   def base_path
     "#{BASE_URL}.#{api_extension}?rows=20"
+  end
+
+  def use_filter(filter_name, value)
+    @url = "#{url}&#{filter_name}=#{value}"
   end
 end
