@@ -85,18 +85,7 @@ module EventFindaRuby
       @results = response["events"]
     end
 
-    def with_extension(extension)
-      if ["json", "xml"].include? extension
-        @api_extension = extension
-      end
-    end
-
     private
-
-    # Retrieving maximum set of results by default: 20
-    def base_path
-      "#{BASE_URL}.#{api_extension}?rows=20"
-    end
 
     def set_keywords_or(keywords)
       keywords.to_a.join("+OR+")

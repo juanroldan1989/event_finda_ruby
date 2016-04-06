@@ -16,6 +16,12 @@ class Base
     @url           = base_path
   end
 
+  def with_extension(extension)
+    if ["json", "xml"].include? extension
+      @api_extension = extension
+    end
+  end
+
   private
 
   # Retrieving maximum set of results by default: 20
