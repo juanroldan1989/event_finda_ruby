@@ -1,7 +1,6 @@
 require "httparty"
 
 class Base
-
   include HTTParty
 
   BASE_URL = "http://api.eventfinda.co.nz/v2/events".freeze
