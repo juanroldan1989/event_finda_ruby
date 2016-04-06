@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "To interact with Eventfinda API"
   s.authors     = ["Juan Roldan"]
   s.email       = "juanroldan1989@gmail.com"
-  s.files       = ["lib/event_finda_ruby.rb"]
+  s.files       = Dir["{lib}/**/*"]
   s.homepage    = "http://rubygems.org/gems/event_finda_ruby"
   s.license     = "MIT"
 
