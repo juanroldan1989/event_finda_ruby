@@ -36,4 +36,4 @@ PLATFORMS
 DEPENDENCIES
   coveralls (~> 0.8.13)
   event_finda_ruby!
-  rake
+  rake (~> 10.4.2)
