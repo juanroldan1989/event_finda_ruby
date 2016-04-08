@@ -31,58 +31,58 @@ gem "event_finda_ruby"
 
 To start using the gem, you should get a developer account (free) from EventFinda's website: http://www.eventfinda.co.nz/api/v2/index
 
-EventFinda will provide you with a username/password pair so you can use from now on.
+EventFinda will provide you with a `username/password` pair so you can use from now on.
 
-Then create a new filter instance (in this example, to retrieve 'Events') like so:
+Then create a new filter instance (in this example, to retrieve `Events`) like so:
 
 ```ruby
 auth   = { username: "jhon", password: "123123abcabc" }
 filter = EventFindaRuby::Events.new(auth)
 ```
 
-and then call api methods, for instance, to filter **free** events:
+and then call api methods, for instance, to filter `free` events:
 
 ```ruby
 filter.by_free
 ```
 
-or **featured** events:
+or `featured` events:
 
 ```ruby
 filter.by_featured
 ```
 
-or **free** and **featured** events:
+or `free` and `featured` events:
 
 ```ruby
 filter.by_free.by_featured
 ```
 
-or events with **prices** between $25 and $50:
+or events with `prices` between $25 and $50:
 
 ```ruby
 filter.by_price_min(25).by_price_min(50)
 ```
 
-or events starting on **2016-05-22** and finishing **2016-10-28**:
+or events starting on `2016-05-22` and finishing `2016-10-28`:
 
 ```ruby
 filter.by_start_date("2016-05-22").by_end_date("2016-10-28")
 ```
 
-or events containing **any** of these keywords: ["fun", "cinema", "outdoor"]:
+or events containing `any` of these keywords `["fun", "cinema", "outdoor"]`:
 
 ```ruby
 filter.by_keywords_or(["fun", "cinema", "outdoor"])
 ```
 
-or events containing **all** of these keywords: ["beach", "music", "free"]:
+or events containing `all` of these keywords `["beach", "music", "free"]`:
 
 ```ruby
 filter.by_keywords_and(["beach", "music", "free"])
 ```
 
-or if you like to setup your **own keywords logic**:
+or if you like to setup your `own keywords logic`:
 
 ```ruby
 filter.by_query("(fun+AND+music+AND+beach)+OR+beach")
@@ -159,7 +159,7 @@ filter = EventFindaRuby::Locations.new(auth)
 
 Current developments are focused on:
 
-- 'Artists', 'Categories' and 'Locations' resources.
+- `Artists`, `Categories` and `Locations` resources.
 - Caching implementation when executing the same API request twice.
 - API timeout handling scenarios.
 
