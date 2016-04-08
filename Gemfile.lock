@@ -19,6 +19,7 @@ GEM
       multi_xml (>= 0.5.2)
     json (1.8.3)
     multi_xml (0.5.5)
+    rake (10.4.2)
     simplecov (0.11.2)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -35,3 +36,4 @@ PLATFORMS
 DEPENDENCIES
   coveralls (~> 0.8.13)
   event_finda_ruby!
+  rake
