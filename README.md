@@ -5,6 +5,7 @@
 # EventFinda Ruby
 [![Code Climate](https://codeclimate.com/github/juanroldan1989/event_finda_ruby/badges/gpa.svg)](https://codeclimate.com/github/juanroldan1989/event_finda_ruby)
 [![Build Status](https://travis-ci.org/juanroldan1989/event_finda_ruby.svg?branch=master)](https://travis-ci.org/juanroldan1989/event_finda_ruby)
+[![Coverage Status](https://coveralls.io/repos/github/juanroldan1989/event_finda_ruby/badge.svg?branch=master)](https://coveralls.io/github/juanroldan1989/event_finda_ruby?branch=master)
 
 A Ruby client for the EventFinda API: www.eventfinda.co.nz
 
