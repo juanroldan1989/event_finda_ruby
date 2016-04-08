@@ -107,7 +107,13 @@ filter.results
 Same logic explained above can be extended to the rest of the filters defined here: http://www.eventfinda.co.nz/api/v2/events
 
 ## 2. Response
-Results are provided as an array of objects with the following structure:
+The response format is JSON by default. It can be changed to XML like this:
+
+```ruby
+filter.with_extension("xml")
+```
+
+Results are provided as an array of objects with the following structure (JSON):
 
 ```ruby
 filter = EventFindaRuby::Events.new(auth)
