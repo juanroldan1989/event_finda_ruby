@@ -10,8 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://rubygems.org/gems/event_finda_ruby"
   s.license     = "MIT"
 
-  s.add_dependency             "httparty",  "~> 0.13.7"
-  s.add_development_dependency "coveralls", "~> 0.8.13"
+  s.add_dependency "httparty",  "~> 0.13.7"
 end
 
 # http://guides.rubygems.org/make-your-own-gem/

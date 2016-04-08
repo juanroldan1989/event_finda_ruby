@@ -1,0 +1,37 @@
+PATH
+  remote: .
+  specs:
+    event_finda_ruby (0.0.1)
+      httparty (~> 0.13.7)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coveralls (0.8.13)
+      json (~> 1.8)
+      simplecov (~> 0.11.0)
+      term-ansicolor (~> 1.3)
+      thor (~> 0.19.1)
+      tins (~> 1.6.0)
+    docile (1.1.5)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    json (1.8.3)
+    multi_xml (0.5.5)
+    simplecov (0.11.2)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
+    term-ansicolor (1.3.2)
+      tins (~> 1.0)
+    thor (0.19.1)
+    tins (1.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  coveralls (~> 0.8.13)
+  event_finda_ruby!
