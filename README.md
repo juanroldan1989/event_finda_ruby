@@ -64,7 +64,7 @@ filter.by_free.by_featured
 or events with `prices` between $25 and $50:
 
 ```ruby
-filter.by_price_min(25).by_price_min(50)
+filter.by_price_min(25).by_price_max(50)
 ```
 
 or events starting on `2016-05-22` and finishing `2016-10-28`:
