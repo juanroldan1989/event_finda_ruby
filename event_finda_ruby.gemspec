@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "event_finda_ruby"
-  s.version     = "0.0.1"
+  s.version     = EventFindaRuby::VERSION
   s.date        = "2016-04-05"
   s.summary     = "Eventfinda Ruby"
   s.description = "Ruby client to interact with Eventfinda API: www.eventfinda.co.nz"

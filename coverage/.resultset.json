@@ -3,7 +3,13 @@
     "coverage": {
       "/media/Store/Juan/projects/event_finda_ruby/lib/event_finda_ruby.rb": [
         1,
+        1,
         1
+      ],
+      "/media/Store/Juan/projects/event_finda_ruby/lib/event_finda_ruby/version.rb": [
+        1,
+        1,
+        null
       ],
       "/media/Store/Juan/projects/event_finda_ruby/lib/event_finda_ruby/base.rb": [
         1,
@@ -280,6 +286,6 @@
         null
       ]
     },
-    "timestamp": 1460115416
+    "timestamp": 1460116546
   }
 }
