@@ -4,9 +4,14 @@
 
 ### Added
 * Initial release :)
-* Requests can be performed to interact with 'Events' resource
+* Requests can be performed to interact with 'Events' resource.
 
 ## [v0.0.2] - 2016-04-09
 
-### Added
+### Changed
 * Common API methods moved into 'Base' module to be shared between all resources.
+
+## [v0.1.2] - 2016-04-09
+
+### Added
+* Requests can be performed to interact with 'Artists' resource.
