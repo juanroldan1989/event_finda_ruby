@@ -15,3 +15,8 @@
 
 ### Added
 * Requests can be performed to interact with 'Artists' resource.
+
+## [v0.2.2] - 2016-04-09
+
+### Added
+* Requests can be performed to interact with 'Categories' resource.
