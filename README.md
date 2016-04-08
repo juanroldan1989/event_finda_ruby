@@ -2,7 +2,7 @@
   <a href="https://github.com/juanroldan1989/event_finda_ruby"><img width="136" src="https://github.com/juanroldan1989/event_finda_ruby/raw/master/icons/icon.png" alt="eventfinda ruby logo" /></a>
 </div>
 
-# Event Finda Ruby
+# EventFinda Ruby
 
 A Ruby client for the EventFinda API: www.eventfinda.co.nz
 
@@ -88,11 +88,19 @@ or if you like to setup your `own keywords logic`:
 filter.by_query("(fun+AND+music+AND+beach)+OR+beach")
 ```
 
+By default, API is returning `20 events tops` on each request. Less events can be retrieved like this:
+
+```ruby
+filter.by_rows(15)
+```
+
 Once applied all the filters you need, make the API call to get the events:
 
 ```ruby
 filter.results
 ```
+
+Same logic explained above can be extended to the rest of the filters defined here: http://www.eventfinda.co.nz/api/v2/events
 
 ## 2. Response
 Results are provided as an array of objects with the following structure:
