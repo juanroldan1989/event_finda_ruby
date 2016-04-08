@@ -3,6 +3,8 @@
 </div>
 
 # EventFinda Ruby
+[![Code Climate](https://codeclimate.com/github/juanroldan1989/event_finda_ruby/badges/gpa.svg)](https://codeclimate.com/github/juanroldan1989/event_finda_ruby)
+[![Build Status](https://travis-ci.org/juanroldan1989/event_finda_ruby.svg?branch=master)](https://travis-ci.org/juanroldan1989/event_finda_ruby)
 
 A Ruby client for the EventFinda API: www.eventfinda.co.nz
 
