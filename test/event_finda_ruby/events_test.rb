@@ -1,6 +1,4 @@
-require "minitest/spec"
-require "minitest/autorun"
-require "event_finda_ruby"
+require "test_helper"
 
 describe EventFindaRuby::Events do
   before do
