@@ -148,7 +148,7 @@ For the sake of the example here, **location**, **category**, **sessions**, **ti
 
 ## 3. Modularity
 
-This gem allow developers to query 'Events' resources from the EventFinda API (work in progress for Artists, Categories and Locations):
+This gem allow developers to query `Events` resources from the EventFinda API (work in progress for `Artists`, `Categories` and `Locations`):
 
 ```ruby
 filter = EventFindaRuby::Events.new(auth)
