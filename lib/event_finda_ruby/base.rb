@@ -45,6 +45,8 @@ class Base
     if ["json", "xml"].include? extension
       @api_extension = extension
     end
+
+    self
   end
 
   private

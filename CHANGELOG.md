@@ -20,3 +20,8 @@
 
 ### Added
 * Requests can be performed to interact with 'Categories' resource.
+
+## [v0.2.3] - 2016-04-09
+
+### Changed
+* Base module: "with_extension" method returns an object like every other method.
