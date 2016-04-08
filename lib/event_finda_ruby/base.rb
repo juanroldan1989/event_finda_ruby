@@ -15,6 +15,32 @@ class Base
     @url           = base_path
   end
 
+  def by_keywords_and(keywords)
+    apply_filter "q", set_keywords_and(keywords)
+
+    self
+  end
+
+  def by_keywords_or(keywords)
+    apply_filter "q", set_keywords_or(keywords)
+
+    self
+  end
+
+  # allowing AND/OR behavior customized by developer
+  # /events.xml?q=(cycling+AND+running+AND+swimming)+OR+triathlon
+  def by_query(query)
+    apply_filter "q", query
+
+    self
+  end
+
+  def by_rows(rows)
+    apply_filter "rows", rows
+
+    self
+  end
+
   def with_extension(extension)
     if ["json", "xml"].include? extension
       @api_extension = extension
@@ -30,5 +56,13 @@ class Base
 
   def apply_filter(filter_name, value)
     @url = "#{url}&#{filter_name}=#{value}"
+  end
+
+  def set_keywords_or(keywords)
+    keywords.join("+OR+")
+  end
+
+  def set_keywords_and(keywords)
+    keywords.join("+AND+")
   end
 end

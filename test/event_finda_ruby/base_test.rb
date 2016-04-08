@@ -23,6 +23,37 @@ describe Base do
     @event_finda_ruby.url.must_equal "#{Base::BASE_URL}.#{@event_finda_ruby.api_extension}?rows=20"
   end
 
+  # Common filters to all resources
+  describe "#by_keywords_or" do
+    it "should contain 'q' param inside URL" do
+      @event_finda_ruby.by_keywords_or(["beach", "fun"])
+      @event_finda_ruby.url.must_include "q=beach+OR+fun"
+    end
+  end
+
+  describe "#by_keywords_and" do
+    it "should contain 'q' param inside URL" do
+      @event_finda_ruby.by_keywords_and(["beach", "fun"])
+      @event_finda_ruby.url.must_include "q=beach+AND+fun"
+    end
+  end
+
+  describe "#by_query" do
+    it "should contain 'q' param inside URL" do
+      @event_finda_ruby.by_query("(cycling+AND+running+AND+swimming)+OR+triathlon")
+      @event_finda_ruby.url.must_include "q=(cycling+AND+running+AND+swimming)+OR+triathlon"
+    end
+  end
+
+  describe "#by_rows" do
+    it "should contain 'rows' param inside URL" do
+      rand_1_20 = (1..20).to_a.sample
+      @event_finda_ruby.by_rows(rand_1_20)
+      @event_finda_ruby.url.must_include "rows=#{rand_1_20}"
+    end
+  end
+  # Common filters to all resources
+
   describe "#with_extension" do
     it "should set api_extension to retrieve data" do
       @event_finda_ruby.with_extension("json")
