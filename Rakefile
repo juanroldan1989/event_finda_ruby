@@ -8,3 +8,6 @@ end
 
 desc "Run tests"
 task :default => :test
+
+require "bundler"
+Bundler::GemHelper.install_tasks
