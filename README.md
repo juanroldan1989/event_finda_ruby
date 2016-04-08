@@ -165,8 +165,39 @@ filter = EventFindaRuby::Categories.new(auth)
 ```ruby
 filter = EventFindaRuby::Locations.new(auth)
 ```
+## 4. Implementation
+Setting up this gem to work is really easy. Even more if you use `has_scope` gem:
+```ruby
+class EventsController < ApplicationController
 
-## 4. Work in progress
+  has_scope :by_free,        as: :free,        type: :boolean
+  has_scope :by_featured,    as: :featured,    type: :boolean
+  has_scope :by_price_min,   as: :price_min
+  has_scope :by_price_max,   as: :price_max
+  has_scope :by_keywords_or, as: :keywords_or, type: :array
+
+  helper_method :collection
+
+  def index
+  end
+
+  private
+
+  def collection
+    @collection ||= events_filter.results
+  end
+
+  def events_filter
+    @events_filter ||= apply_scopes(filter)
+  end
+
+  def filter
+    @filter ||= EventFindaRuby::Events.new(auth)
+  end
+end
+```
+
+## 5. Work in progress
 
 Current developments are focused on:
 
@@ -174,10 +205,10 @@ Current developments are focused on:
 - Caching implementation when executing the same API request twice.
 - API timeout handling scenarios.
 
-## 5. Development
+## 6. Development
 
 Questions or problems? Please post them on the [issue tracker](https://github.com/juanroldan1989/event_finda_ruby/github/issues). You can contribute changes by forking the project and submitting a pull request. You can ensure the tests are passing by running `bundle` and `rake`.
 
-## 6. License
+## 7. License
 
 [MIT](http://opensource.org/licenses/MIT)
