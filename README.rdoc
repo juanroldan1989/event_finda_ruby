@@ -1,6 +1,0 @@
-== Event Finda Ruby
-(Work in progress)
-
-A Ruby client for the EventFinda API: www.eventfinda.co.nz
-
-Currently supports a couple of the API methods. It's built in a modular way.
