@@ -1,4 +1,4 @@
-<div align="center">
+<div align="left">
   <a href="https://github.com/juanroldan1989/event_finda_ruby"><img width="136" src="https://github.com/juanroldan1989/event_finda_ruby/raw/master/icons/icon.png" alt="eventfinda ruby logo" /></a>
 </div>
 
