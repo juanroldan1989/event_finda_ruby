@@ -12,7 +12,7 @@ class Base
   def initialize(auth)
     @api_extension = "json"
     @auth          = auth
-    @filters       = ""
+    @filters       = { "rows" => "20" }
   end
 
   def by_keywords_and(keywords)
@@ -27,8 +27,6 @@ class Base
     self
   end
 
-  # allowing AND/OR behavior customized by developer
-  # /events.xml?q=(cycling+AND+running+AND+swimming)+OR+triathlon
   def by_query(query)
     apply_filter "q", query
 
@@ -41,9 +39,8 @@ class Base
     self
   end
 
-  # retrieving maximum set of results by default: 20
   def url
-    "#{BASE_URL}.#{api_extension}?rows=20#{filters}"
+    "#{BASE_URL}.#{api_extension}?#{get_filters}"
   end
 
   def with_extension(extension)
@@ -57,7 +54,11 @@ class Base
   private
 
   def apply_filter(filter_name, value)
-    @filters = "#{@filters}&#{filter_name}=#{value}"
+    filters[filter_name] = value
+  end
+
+  def get_filters
+    filters.map { |k,v| "#{k}=#{v}" }.join("&")
   end
 
   def set_keywords_or(keywords)
