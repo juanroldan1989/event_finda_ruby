@@ -21,14 +21,12 @@ module EventFindaRuby
       self
     end
 
-    # price_max format "35.0" or "35"
     def by_price_max(price_max)
       apply_filter "price_max", price_max
 
       self
     end
 
-    # price_min format "35.0" or "35"
     def by_price_min(price_min)
       apply_filter "price_min", price_min
 
