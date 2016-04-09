@@ -19,8 +19,12 @@ describe Base do
     @event_finda_ruby.auth[:password].wont_be_empty
   end
 
-  it "should have a default URL" do
-    @event_finda_ruby.url.must_equal "#{Base::BASE_URL}.#{@event_finda_ruby.api_extension}?rows=20"
+  it "should have an empty string as 'filters' variable" do
+    @event_finda_ruby.filters.must_equal ""
+  end
+
+  it "should allow to see current URL" do
+    @event_finda_ruby.url.must_equal "#{Base::BASE_URL}.#{@event_finda_ruby.api_extension}?rows=20#{@event_finda_ruby.filters}"
   end
 
   # Common filters to all resources
