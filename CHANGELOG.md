@@ -1,5 +1,11 @@
 # Change log
 
+## [v0.2.4] - 2016-04-09
+
+### Changed
+* Base module: filters appliance logic implemented through hashes. Cleaner and simpler.
+* API extension defined properly inside URL.
+
 ## [v0.2.3] - 2016-04-09
 
 ### Changed
