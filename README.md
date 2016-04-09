@@ -13,9 +13,9 @@ A Ruby client for the EventFinda API: www.eventfinda.co.nz
 ## Features
 
 * Intuitive API interface navigation.
-* Currently supports a variety of the API methods for 'Events' resource. It's built in a modular way.
-* Modular design allows for working with parts of API.
-* Fully tested with unit tests when generating the final URL request.
+* Currently supports a variety of the API methods for `Events`, `Categories` and `Artists` resources.
+* Modular design allows for working with only parts of API you need.
+* Fully tested with unit tests when applying filters and generating the final URL request.
 
 ## Installation
 
