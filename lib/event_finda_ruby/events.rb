@@ -21,32 +21,6 @@ module EventFindaRuby
       self
     end
 
-    def by_keywords_and(keywords)
-      apply_filter "q", set_keywords_and(keywords)
-
-      self
-    end
-
-    def by_keywords_or(keywords)
-      apply_filter "q", set_keywords_or(keywords)
-
-      self
-    end
-
-    # allowing AND/OR behavior customized by developer
-    # /events.xml?q=(cycling+AND+running+AND+swimming)+OR+triathlon
-    def by_query(query)
-      apply_filter "q", query
-
-      self
-    end
-
-    def by_rows(rows)
-      apply_filter "rows", rows
-
-      self
-    end
-
     # price_max format "35.0" or "35"
     def by_price_max(price_max)
       apply_filter "price_max", price_max
@@ -85,14 +59,5 @@ module EventFindaRuby
       @results = response["events"]
     end
 
-    private
-
-    def set_keywords_or(keywords)
-      keywords.to_a.join("+OR+")
-    end
-
-    def set_keywords_and(keywords)
-      keywords.to_a.join("+AND+")
-    end
   end
 end

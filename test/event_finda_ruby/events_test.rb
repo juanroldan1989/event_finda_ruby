@@ -27,35 +27,6 @@ describe EventFindaRuby::Events do
     end
   end
 
-  describe "#by_keywords_or" do
-    it "should contain 'q' param inside URL" do
-      @filter.by_keywords_or(["beach", "fun"])
-      @filter.url.must_include "q=beach+OR+fun"
-    end
-  end
-
-  describe "#by_keywords_and" do
-    it "should contain 'q' param inside URL" do
-      @filter.by_keywords_and(["beach", "fun"])
-      @filter.url.must_include "q=beach+AND+fun"
-    end
-  end
-
-  describe "#by_query" do
-    it "should contain 'q' param inside URL" do
-      @filter.by_query("(cycling+AND+running+AND+swimming)+OR+triathlon")
-      @filter.url.must_include "q=(cycling+AND+running+AND+swimming)+OR+triathlon"
-    end
-  end
-
-  describe "#by_rows" do
-    it "should contain 'rows' param inside URL" do
-      rand_1_20 = (1..20).to_a.sample
-      @filter.by_rows(rand_1_20)
-      @filter.url.must_include "rows=#{rand_1_20}"
-    end
-  end
-
   describe "#by_price_max" do
     it "should contain 'price_max' param inside URL" do
       @filter.by_price_max("75.0")
