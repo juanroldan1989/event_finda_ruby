@@ -1,6 +1,8 @@
 module EventFindaRuby
   class Artists < Base
 
+    RESOURCE_SLUG = "artists".freeze
+
     def by_category(category)
       apply_filter "category", category
 
@@ -11,16 +13,6 @@ module EventFindaRuby
       apply_filter "category_slug", slug
 
       self
-    end
-
-    def results
-      @results = response["artists"]
-    end
-
-    private
-
-    def base_url
-      "http://api.eventfinda.co.nz/v2/artists"
     end
 
   end

@@ -1,15 +1,7 @@
 module EventFindaRuby
   class Categories < Artists
 
-    def results
-      @results = response["categories"]
-    end
-
-    private
-
-    def base_url
-      "http://api.eventfinda.co.nz/v2/categories"
-    end
+    RESOURCE_SLUG = "categories".freeze
 
   end
 end

@@ -1,6 +1,8 @@
 module EventFindaRuby
   class Locations < Base
 
+    RESOURCE_SLUG = "locations".freeze
+
     def by_featured
       apply_filter "featured", 1
 
@@ -39,10 +41,6 @@ module EventFindaRuby
       self
     end
 
-    def results
-      @results = response["locations"]
-    end
-
     def sort_by(option)
       apply_filter "order", option
 
@@ -53,12 +51,6 @@ module EventFindaRuby
       apply_filter "levels", level
 
       self
-    end
-
-    private
-
-    def base_url
-      "http://api.eventfinda.co.nz/v2/locations"
     end
 
   end

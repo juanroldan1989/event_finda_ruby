@@ -1,6 +1,8 @@
 module EventFindaRuby
   class Events < Base
 
+    RESOURCE_SLUG = "events".freeze
+
     def by_end_date(end_date)
       apply_filter "end_date", end_date
 
@@ -47,16 +49,6 @@ module EventFindaRuby
       apply_filter "username", username
 
       self
-    end
-
-    def results
-      @results = response["events"]
-    end
-
-    private
-
-    def base_url
-      "http://api.eventfinda.co.nz/v2/events"
     end
 
   end
