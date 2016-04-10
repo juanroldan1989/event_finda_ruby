@@ -154,6 +154,13 @@ class EventsController < ApplicationController
   end
 
   private
+  
+  def auth
+    {
+      username: Rails.application.config.finda_user_name,
+      password: Rails.application.config.finda_password
+    }
+  end
 
   def collection
     @collection ||= events_filter.results
