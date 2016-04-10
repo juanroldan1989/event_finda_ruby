@@ -17,4 +17,46 @@ describe EventFindaRuby::Locations do
     end
   end
 
+  describe "#by_location" do
+    it "should contain 'location' param inside URL" do
+      @filter.by_location("123")
+      @filter.url.must_include "location=123"
+    end
+  end
+
+  describe "#by_location_slug" do
+    it "should contain 'location_slug' param inside URL" do
+      @filter.by_location_slug("auckland-central")
+      @filter.url.must_include "location_slug=auckland-central"
+    end
+  end
+
+  describe "#by_venue" do
+    it "should contain 'venue' param inside URL" do
+      @filter.by_venue("true")
+      @filter.url.must_include "venue=true"
+
+      @filter.by_venue("false")
+      @filter.url.must_include "venue=false"
+    end
+
+    it "should not contain 'venue' param inside URL when wrong value is provided" do
+      @filter.by_venue("other")
+      @filter.url.wont_include "venue=other"
+    end
+  end
+
+  describe "#sort_by" do
+    it "should contain 'order' param inside URL" do
+      @filter.sort_by("popularity")
+      @filter.url.must_include "order=popularity"
+    end
+  end
+
+  describe "#with_level" do
+    it "should contain 'level' param inside URL" do
+      @filter.with_level(2)
+      @filter.url.must_include "levels=2"
+    end
+  end
 end

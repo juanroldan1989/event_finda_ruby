@@ -7,6 +7,32 @@ module EventFindaRuby
       self
     end
 
+    def by_location(location)
+      apply_filter "location", location
+
+      self
+    end
+
+    def by_location_slug(slug)
+      apply_filter "location_slug", slug
+
+      self
+    end
+
+    def by_venue(value)
+      if ["true", "false"].include? value
+        apply_filter "venue", value
+      end
+
+      self
+    end
+
+    def results
+      response = HTTParty.get("#{url}", basic_auth: auth)
+
+      @results = response["locations"]
+    end
+
     def sort_by(option)
       case option
       when "popularity"
@@ -17,23 +43,10 @@ module EventFindaRuby
       self
     end
 
-    def child_locations_from(location_id)
-      apply_filter "location", location_id
-
-      self
-    end
-
     def with_level(level)
       apply_filter "levels", level
 
       self
-    end
-
-
-    def results
-      response = HTTParty.get("#{url}", basic_auth: auth)
-
-      @results = response["locations"]
     end
 
     private
