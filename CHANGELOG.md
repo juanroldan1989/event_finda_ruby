@@ -1,5 +1,11 @@
 # Change log
 
+## [v0.2.7] - 2016-04-10
+
+### Changed
+* "results" instance method moved into Base class.
+* RESOURCE_SLUG constant implemented to reduced logic around URL request.
+
 ## [v0.2.6] - 2016-04-10
 
 ### Added
