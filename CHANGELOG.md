@@ -1,10 +1,15 @@
 # Change log
 
+## [v0.2.6] - 2016-04-10
+
+### Added
+* 'Locations' resource: filters added. Tests added.
+
 ## [v0.2.5] - 2016-04-10
 
 ### Changed
 * Base module: BASE_URL constant removed.
-* Locations resource added. Tests added.
+* 'Locations' resource added. Tests added.
 
 ## [v0.2.4] - 2016-04-09
 
