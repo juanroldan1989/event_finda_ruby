@@ -46,6 +46,20 @@ describe EventFindaRuby::Locations do
     end
   end
 
+  describe "#by_point" do
+    it "should contain 'point' param inside URL" do
+      @filter.by_point("-36.84846,174.763332")
+      @filter.url.must_include "point=-36.84846,174.763332"
+    end
+  end
+
+  describe "#by_radius" do
+    it "should contain 'radius' param inside URL" do
+      @filter.by_radius("5")
+      @filter.url.must_include "distance=5"
+    end
+  end
+
   describe "#sort_by" do
     it "should contain 'order' param inside URL" do
       @filter.sort_by("popularity")

@@ -19,6 +19,18 @@ module EventFindaRuby
       self
     end
 
+    def by_point(point)
+      apply_filter "point", point
+
+      self
+    end
+
+    def by_radius(radius)
+      apply_filter "distance", radius
+
+      self
+    end
+
     def by_venue(value)
       if ["true", "false"].include? value
         apply_filter "venue", value
@@ -34,11 +46,7 @@ module EventFindaRuby
     end
 
     def sort_by(option)
-      case option
-      when "popularity"
-        apply_filter "order", option
-      when "distance"
-      end
+      apply_filter "order", option
 
       self
     end
