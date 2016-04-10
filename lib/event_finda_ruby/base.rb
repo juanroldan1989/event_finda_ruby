@@ -63,6 +63,10 @@ class Base
     filters.map { |k,v| "#{k}=#{v}" }.join("&")
   end
 
+  def response
+    HTTParty.get("#{url}", basic_auth: auth)
+  end
+
   def set_keywords_or(keywords)
     keywords.join("+OR+")
   end

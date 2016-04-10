@@ -2,8 +2,6 @@ module EventFindaRuby
   class Categories < Artists
 
     def results
-      response = HTTParty.get("#{url}", basic_auth: auth)
-
       @results = response["categories"]
     end
 
