@@ -25,7 +25,7 @@ describe Base do
   end
 
   it "should allow to see current URL" do
-    @event_finda_ruby.url.must_equal "#{Base::BASE_URL}.json?rows=20"
+    @event_finda_ruby.url.must_equal "http://api.eventfinda.co.nz/v2/base.json?rows=20"
   end
 
   # Common filters to all resources

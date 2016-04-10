@@ -6,6 +6,10 @@ describe EventFindaRuby::Artists do
     @filter = EventFindaRuby::Artists.new(auth)
   end
 
+  it "should allow to see current URL" do
+    @filter.url.must_equal "http://api.eventfinda.co.nz/v2/artists.json?rows=20"
+  end
+
   describe "#by_category" do
     it "should contain 'category' param inside URL" do
       @filter.by_category("123")

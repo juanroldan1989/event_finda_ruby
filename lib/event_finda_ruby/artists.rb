@@ -1,8 +1,6 @@
 module EventFindaRuby
   class Artists < Base
 
-    BASE_URL = "http://api.eventfinda.co.nz/v2/artists".freeze
-
     def by_category(category)
       apply_filter "category", category
 
@@ -19,6 +17,12 @@ module EventFindaRuby
       response = HTTParty.get("#{url}", basic_auth: auth)
 
       @results = response["artists"]
+    end
+
+    private
+
+    def base_url
+      "http://api.eventfinda.co.nz/v2/artists"
     end
 
   end

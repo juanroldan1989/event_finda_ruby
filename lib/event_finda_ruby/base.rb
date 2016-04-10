@@ -3,8 +3,6 @@ require "httparty"
 class Base
   include HTTParty
 
-  BASE_URL = "http://api.eventfinda.co.nz/v2/events".freeze
-
   attr_reader :api_extension
   attr_reader :auth
   attr_reader :filters
@@ -40,7 +38,7 @@ class Base
   end
 
   def url
-    "#{BASE_URL}.#{api_extension}?#{get_filters}"
+    "#{base_url}.#{api_extension}?#{get_filters}"
   end
 
   def with_extension(extension)
@@ -55,6 +53,10 @@ class Base
 
   def apply_filter(filter_name, value)
     filters[filter_name] = value
+  end
+
+  def base_url
+    "http://api.eventfinda.co.nz/v2/base"
   end
 
   def get_filters

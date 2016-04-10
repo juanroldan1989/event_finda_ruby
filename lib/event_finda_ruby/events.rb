@@ -1,8 +1,6 @@
 module EventFindaRuby
   class Events < Base
 
-    BASE_URL = "http://api.eventfinda.co.nz/v2/events".freeze
-
     def by_end_date(end_date)
       apply_filter "end_date", end_date
 
@@ -55,6 +53,12 @@ module EventFindaRuby
       response = HTTParty.get("#{url}", basic_auth: auth)
 
       @results = response["events"]
+    end
+
+    private
+
+    def base_url
+      "http://api.eventfinda.co.nz/v2/events"
     end
 
   end

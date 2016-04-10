@@ -6,6 +6,10 @@ describe EventFindaRuby::Events do
     @filter = EventFindaRuby::Events.new(auth)
   end
 
+  it "should allow to see current URL" do
+    @filter.url.must_equal "http://api.eventfinda.co.nz/v2/events.json?rows=20"
+  end
+
   describe "#by_end_date" do
     it "should contain 'end_date' param inside URL" do
       @filter.by_end_date("2016-10-25")
