@@ -4,7 +4,7 @@ require File.expand_path('../lib/event_finda_ruby/version', __FILE__)
 Gem::Specification.new do |s|
   s.name        = "event_finda_ruby"
   s.version     = EventFindaRuby::VERSION
-  s.date        = "2016-04-05"
+  s.date        = "2016-04-10"
   s.summary     = "Eventfinda Ruby"
   s.description = "Ruby client to interact with Eventfinda API: www.eventfinda.co.nz"
   s.authors     = ["Juan Roldan"]
