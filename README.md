@@ -178,9 +178,6 @@ end
 
 ## 5. Work in progress
 
-Current developments are focused on:
-
-- `Artists`, `Categories` and `Locations` resources.
 - Caching implementation when executing the same API request twice.
 - API timeout handling scenarios.
 
