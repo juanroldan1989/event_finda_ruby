@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    event_finda_ruby (0.2.5)
+    event_finda_ruby (0.2.6)
       httparty (~> 0.13.7)
 
 GEM
