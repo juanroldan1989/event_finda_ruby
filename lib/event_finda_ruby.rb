@@ -1,5 +1,6 @@
 require "event_finda_ruby/version"
 require "event_finda_ruby/base"
-require "event_finda_ruby/events"
 require "event_finda_ruby/artists"
 require "event_finda_ruby/categories"
+require "event_finda_ruby/events"
+require "event_finda_ruby/locations"
