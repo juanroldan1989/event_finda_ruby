@@ -62,49 +62,13 @@ or `free` and `featured` events:
 filter.by_free.by_featured
 ```
 
-or events with `prices` between $25 and $50:
-
-```ruby
-filter.by_price_min(25).by_price_max(50)
-```
-
-or events starting on `2016-05-22` and finishing `2016-10-28`:
-
-```ruby
-filter.by_start_date("2016-05-22").by_end_date("2016-10-28")
-```
-
-or events containing `any` of these keywords `["fun", "cinema", "outdoor"]`:
-
-```ruby
-filter.by_keywords_or(["fun", "cinema", "outdoor"])
-```
-
-or events containing `all` of these keywords `["beach", "music", "free"]`:
-
-```ruby
-filter.by_keywords_and(["beach", "music", "free"])
-```
-
-or if you like to setup your `own keywords logic`:
-
-```ruby
-filter.by_query("(fun+AND+music+AND+beach)+OR+beach")
-```
-
-By default, API is returning `20 events tops` on each request. Less events can be retrieved like this:
-
-```ruby
-filter.by_rows(15)
-```
-
 Once applied all the filters you need, make the API call to get the events:
 
 ```ruby
 filter.results
 ```
 
-Same logic explained above can be extended to the rest of the filters defined here: http://www.eventfinda.co.nz/api/v2/events
+To see a full list of examples please check the <a href="https://github.com/juanroldan1989/event_finda_ruby/wiki">wiki</a> page.
 
 ## 2. Response
 The response format is JSON by default. It can be changed to XML like this:
