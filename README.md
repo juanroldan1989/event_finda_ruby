@@ -15,7 +15,7 @@ A Ruby client for the EventFinda API: www.eventfinda.co.nz
 * Intuitive API interface navigation.
 * Currently supports a variety of the API methods for `Events`, `Categories`, `Artists` and `Locations`  resources.
 * Modular design allows for working with only parts of API you need.
-* Fully tested with unit tests when applying filters and generating the final URL request.
+* Fully tested with unit tests when applying filters and generating the final request URL.
 
 ## Installation
 
@@ -178,9 +178,6 @@ end
 
 ## 5. Work in progress
 
-Current developments are focused on:
-
-- `Artists`, `Categories` and `Locations` resources.
 - Caching implementation when executing the same API request twice.
 - API timeout handling scenarios.
 
