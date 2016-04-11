@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.version     = EventFindaRuby::VERSION
   s.date        = "2016-04-10"
   s.summary     = "Eventfinda Ruby"
-  s.description = "Ruby client to interact with Eventfinda API: www.eventfinda.co.nz"
+  s.description = "Ruby client to interact with EventFinda API - www.eventfinda.co.nz"
   s.authors     = ["Juan Roldan"]
   s.email       = "juanroldan1989@gmail.com"
   s.files       = Dir["{lib}/**/*"]
