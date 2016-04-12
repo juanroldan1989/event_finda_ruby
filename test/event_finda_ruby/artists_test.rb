@@ -32,7 +32,7 @@ describe EventFindaRuby::Artists do
         artists      = @filter.results
         first_artist = artists.first
 
-        # artist's personal fields
+        # artist's primary fields
         first_artist["id"].must_equal       1218
         first_artist["name"].must_equal     "10 String Symphony"
         first_artist["url_slug"].must_equal "10-string-symphony"
