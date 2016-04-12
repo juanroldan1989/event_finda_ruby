@@ -1,5 +1,14 @@
 # Change log
 
+## [v0.2.8] - 2016-04-12
+
+### Added
+* "webmock" / "vcr" gems implemented to store real API responses.
+* 'Events', 'Artists', 'Categories' and 'Locations' resources: "#results" instance method tested with API real results stored via "vcr" gem.
+
+### Changed
+* Gem's description
+
 ## [v0.2.7] - 2016-04-10
 
 ### Changed
