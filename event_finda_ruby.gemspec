@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
 
   s.add_dependency "httparty",  "~> 0.13.7"
-end
 
-# http://guides.rubygems.org/make-your-own-gem/
-# https://quickleft.com/blog/engineering-lunch-series-step-by-step-guide-to-building-your-first-ruby-gem/
+  s.add_development_dependency "vcr",     "~> 3.0.1"
+  s.add_development_dependency "webmock", "~> 1.24.2"
+end

@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://event_finda:123123@api.eventfinda.co.nz/v2/artists.json?rows=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 12 Apr 2016 09:24:47 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 12 Apr 2016 09:29:47 GMT
+      Last-Modified:
+      - Tue, 12 Apr 2016 09:24:47 GMT
+      Cache-Control:
+      - max-age=300, proxy-revalidate
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Keep-Alive
+      Age:
+      - '293'
+    body:
+      encoding: UTF-8
+      string: '{"@attributes":{"count":1502},"artists":[{"id":1218,"name":"10 String
+        Symphony","url_slug":"10-string-symphony","description":"The Nashville music
+        scene is a famous home for world-class side musicians, as well as a plethora
+        of legendary songwriters.  Now it presents us with a duo that combines the
+        best of both worlds, skilled instrumentalists with an incredible amount of
+        soul and a love of great songs.\r\n\r\n10 String Symphony is an arena for
+        mesmerizing acoustic innovation.  Although difficult to categorize, their
+        music is instantly recognizable as a blend of two distinct but equally vivacious
+        musical voices, encompassing \u201caggressive, almost discordant, celtic and
+        dare I say punky string-chording experimentations\u201d (The Bluegrass Situation).  Vocally,
+        Rachel Baiman and Christian Sedelmyer lock in seamlessly, and their vocal
+        duets often take center stage despite the fact that they are self-described
+        fiddle players.\r\n\r\nSedelmyer (Formerly of the Farewell Drifters) and Baiman
+        (Formerly of Belfry Fellows) met in Nashville, and realized a mutual love
+        for the range and depth of the 5-String fiddle.  Their desire to see just
+        how far a two-fiddle, two-vocals instrumentation could take them was the inspiration
+        for the 10 String Symphony project.  By the time their first full-length album
+        was released in November 2012, their instrumentation had expanded to include
+        the occasional clawhammer banjo and resonator mandolin, though still maintaining
+        a stripped down, tightly woven and carefully arranged duo sound.\r\n\r\nDecidedly
+        contemporary in their musical approach, their debut album showcases Sedelmyer\u2019s
+        virtuosic improvisation and creative harmonic soundscape ideas alongside Baiman\u2019s
+        old-time rhythm and emotional melodic sensibilities. Just over a year old,
+        the duo has already gained recognition and attention from some major festivals,
+        landing slots at the ROMP festival in Ownsboro, KY and the Strawberry Music
+        Festival in Yosemite, CA in the summer of 2013.","url":"http:\/\/www.eventfinda.co.nz\/artist\/10-string-symphony","web_sites":{"@attributes":{"count":0},"web_sites":[]},"images":{"@attributes":{"count":1},"images":[{"id":451715,"is_primary":true,"transforms":{"@attributes":{"count":5},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/artists\/transformed\/451715-1218-2.jpg","width":80,"height":53},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/artists\/transformed\/451715-1218-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/artists\/transformed\/451715-1218-8.jpg","width":190,"height":127},{"transformation_id":27,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/artists\/transformed\/451715-1218-27.jpg","width":350,"height":350},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/artists\/transformed\/451715-1218-7.jpg?v=2","width":650,"height":280}]}}]},"location":{"id":822,"name":"United
+        States","summary":"United States, International","url_slug":"united-states","is_venue":false,"count_current_events":0},"category":{"id":255,"name":"Folk","url_slug":"folk","parent_id":6,"count_current_events":84}}]}'
+    http_version: 
+  recorded_at: Tue, 12 Apr 2016 09:29:40 GMT
+recorded_with: VCR 3.0.1
