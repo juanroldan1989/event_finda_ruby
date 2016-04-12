@@ -42,7 +42,7 @@ EventFinda will provide you with a `username/password` pair so you can use from 
 Then create a new filter instance (in this example, to retrieve `Events`) like so:
 
 ```ruby
-auth   = { username: "jhon", password: "123123abcabc" }
+auth   = { username: "event_finda", password: "123123" }
 filter = EventFindaRuby::Events.new(auth)
 ```
 
