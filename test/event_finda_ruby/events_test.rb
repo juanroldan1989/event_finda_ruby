@@ -112,15 +112,15 @@ describe EventFindaRuby::Events do
 
         # event's ticket_types fields
         first_ticket = first_event["ticket_types"]["ticket_types"].first
-        first_ticket["id"].must_equal 440885
-        first_ticket["name"].must_equal "In advance adult"
-        first_ticket["price"].must_equal "9.00"
-        first_ticket["is_ticketed"].must_equal true
-        first_ticket["description"].must_equal ""
+        first_ticket["id"].must_equal                        440885
+        first_ticket["name"].must_equal                      "In advance adult"
+        first_ticket["price"].must_equal                     "9.00"
+        first_ticket["is_ticketed"].must_equal               true
+        first_ticket["description"].must_equal               ""
         first_ticket["minimum_purchase_quantity"].must_equal 1
-        first_ticket["is_addon"].must_equal false
-        first_ticket["onsale_at"].must_equal nil
-        first_ticket["offsale_at"].must_equal nil
+        first_ticket["is_addon"].must_equal                  false
+        first_ticket["onsale_at"].must_equal                 nil
+        first_ticket["offsale_at"].must_equal                nil
       end
     end
   end
