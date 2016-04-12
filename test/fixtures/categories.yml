@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://event_finda:123123@api.eventfinda.co.nz/v2/categories.json?rows=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 12 Apr 2016 09:46:26 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 12 Apr 2016 09:51:26 GMT
+      Last-Modified:
+      - Tue, 12 Apr 2016 09:46:26 GMT
+      Cache-Control:
+      - max-age=300, proxy-revalidate
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Keep-Alive
+      Age:
+      - '160'
+    body:
+      encoding: UTF-8
+      string: '{"@attributes":{"count":144},"categories":[{"id":246,"name":"All Events","url_slug":"whatson","parent_id":null,"count_current_events":7054}]}'
+    http_version: 
+  recorded_at: Tue, 12 Apr 2016 09:49:06 GMT
+recorded_with: VCR 3.0.1
