@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://event_finda:123123@api.eventfinda.co.nz/v2/locations.json?rows=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 12 Apr 2016 10:12:17 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Tue, 12 Apr 2016 10:17:17 GMT
+      Last-Modified:
+      - Tue, 12 Apr 2016 10:12:17 GMT
+      Cache-Control:
+      - max-age=300, proxy-revalidate
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Keep-Alive
+      Age:
+      - '56'
+    body:
+      encoding: UTF-8
+      string: '{"@attributes":{"count":19953},"locations":[{"id":574,"name":"New Zealand","summary":"New
+        Zealand","url_slug":"new-zealand","is_venue":false,"count_current_events":7054}]}'
+    http_version: 
+  recorded_at: Tue, 12 Apr 2016 10:13:13 GMT
+recorded_with: VCR 3.0.1
