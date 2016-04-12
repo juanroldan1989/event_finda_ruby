@@ -16,20 +16,21 @@ A Ruby client for the EventFinda API: www.eventfinda.co.nz
 * Intuitive API interface navigation.
 * Currently supports a variety of the API methods for `Events`, `Categories`, `Artists` and `Locations`  resources.
 * Modular design allows for working with only parts of API you need.
-* Fully tested with unit tests when applying filters and generating the final request URL.
+* URL generation process fully tested when applying filters for each request.
+* API integration tests recorded and fully tested using [vcr](https://github.com/vcr/vcr) gem: fast tests (first HTTP request is real and it's response is stored for future runs), deterministic (tests will continue to pass, even if you are offline, or eventfinda.co.nz goes down for maintenance) and accurate (responses will contain the same headers and body you get from a real request).
 
 ## Installation
 
-Install the gem by running
+Install the gem by running:
 
 ```ruby
 gem install event_finda_ruby
 ```
 
-or put it in your Gemfile and run `bundle install`
+or put it in your Gemfile and run `bundle install`:
 
 ```ruby
-gem "event_finda_ruby"
+gem "event_finda_ruby", "~> 0.2.7"
 ```
 
 ## 1. Usage
