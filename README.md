@@ -185,7 +185,7 @@ end
 
 ## 6. Development
 
-Questions or problems? Please post them on the [issue tracker](https://github.com/juanroldan1989/event_finda_ruby/github/issues). You can contribute changes by forking the project and submitting a pull request. You can ensure the tests are passing by running `bundle` and `rake`.
+Questions or problems? Please post them on the [issue tracker](https://github.com/juanroldan1989/event_finda_ruby/issues). You can contribute changes by forking the project and submitting a pull request. You can ensure the tests are passing by running `bundle` and `rake`.
 
 ## 7. License
 
