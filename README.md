@@ -30,7 +30,7 @@ gem install event_finda_ruby
 or put it in your Gemfile and run `bundle install`:
 
 ```ruby
-gem "event_finda_ruby", "~> 0.2.7"
+gem "event_finda_ruby", "~> 0.2.8"
 ```
 
 ## 1. Usage
