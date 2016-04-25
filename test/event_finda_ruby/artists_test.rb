@@ -33,22 +33,22 @@ describe EventFindaRuby::Artists do
         first_artist = artists.first
 
         # artist's primary fields
-        first_artist["id"].must_equal       1218
-        first_artist["name"].must_equal     "10 String Symphony"
-        first_artist["url_slug"].must_equal "10-string-symphony"
-        first_artist["url"].must_equal      "http:\/\/www.eventfinda.co.nz\/artist\/10-string-symphony"
+        first_artist["id"].must_equal               1218
+        first_artist["name"].must_equal             "10 String Symphony"
+        first_artist["url_slug"].must_equal         "10-string-symphony"
+        first_artist["url"].must_equal              "http:\/\/www.eventfinda.co.nz\/artist\/10-string-symphony"
 
         # artist's image fields
         first_image = first_artist["images"]["images"].first
-        first_image["id"].must_equal 451715
-        first_image["is_primary"].must_equal true
+        first_image["id"].must_equal                451715
+        first_image["is_primary"].must_equal        true
 
         ## first_image's transform fields
         transform = first_image["transforms"]["transforms"].first
-        transform["transformation_id"].must_equal 2
-        transform["url"].must_equal               "http://cdn.eventfinda.co.nz/uploads/artists/transformed/451715-1218-2.jpg"
-        transform["width"].must_equal             80
-        transform["height"].must_equal            53
+        transform["transformation_id"].must_equal   2
+        transform["url"].must_equal                 "http://cdn.eventfinda.co.nz/uploads/artists/transformed/451715-1218-2.jpg"
+        transform["width"].must_equal               80
+        transform["height"].must_equal              53
 
         # artist's location fields
         location = first_artist["location"]
