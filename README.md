@@ -7,7 +7,7 @@
 [![Code Climate](https://codeclimate.com/github/juanroldan1989/event_finda_ruby/badges/gpa.svg)](https://codeclimate.com/github/juanroldan1989/event_finda_ruby)
 [![Build Status](https://travis-ci.org/juanroldan1989/event_finda_ruby.svg?branch=master)](https://travis-ci.org/juanroldan1989/event_finda_ruby)
 [![Coverage Status](https://coveralls.io/repos/github/juanroldan1989/event_finda_ruby/badge.svg?branch=master)](https://coveralls.io/github/juanroldan1989/event_finda_ruby?branch=master)
-[![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/event_finda_ruby/0.2.7?type=total&color=brightgreen)](https://rubygems.org/gems/event_finda_ruby)
+[![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/event_finda_ruby/0.3.0?type=total&color=brightgreen)](https://rubygems.org/gems/event_finda_ruby)
 
 A Ruby client for the EventFinda API: www.eventfinda.co.nz
 
@@ -30,7 +30,7 @@ gem install event_finda_ruby
 or put it in your Gemfile and run `bundle install`:
 
 ```ruby
-gem "event_finda_ruby", "~> 0.2.8"
+gem "event_finda_ruby", "~> 0.3.0"
 ```
 
 ## 1. Usage
@@ -39,11 +39,21 @@ To start using the gem, you should get a developer account (free) from EventFind
 
 EventFinda will provide you with a `username/password` pair so you can use from now on.
 
+Setup those credentials within an initializer:
+
+```ruby
+# event_finda_initializer.rb
+
+EventFindaRuby.configure do |configure|
+  config.username = "event_finda"
+  config.password = "123123"
+end
+```
+
 Then create a new filter instance (in this example, to retrieve `Events`) like so:
 
 ```ruby
-auth   = { username: "event_finda", password: "123123" }
-filter = EventFindaRuby::Events.new(auth)
+filter = EventFindaRuby::Events.new
 ```
 
 and then call api methods, for instance, to filter `free` events:
@@ -82,7 +92,7 @@ filter.with_extension("xml")
 Results are provided as an array of objects with the following structure (JSON):
 
 ```ruby
-filter = EventFindaRuby::Events.new(auth)
+filter = EventFindaRuby::Events.new
 filter.results
 => [
   { "id": 353192,
@@ -124,19 +134,19 @@ For the sake of the example here, **location**, **category**, **sessions**, **ti
 This gem allow developers to query `Events`, `Artists`, `Categories` and `Locations` resources from the EventFinda API:
 
 ```ruby
-filter = EventFindaRuby::Events.new(auth)
+filter = EventFindaRuby::Events.new
 ```
 
 ```ruby
-filter = EventFindaRuby::Artists.new(auth)
+filter = EventFindaRuby::Artists.new
 ```
 
 ```ruby
-filter = EventFindaRuby::Categories.new(auth)
+filter = EventFindaRuby::Categories.new
 ```
 
 ```ruby
-filter = EventFindaRuby::Locations.new(auth)
+filter = EventFindaRuby::Locations.new
 ```
 ## 4. Implementation
 Setting up this gem to work is really easy. Even more if you use `has_scope` gem:
@@ -156,13 +166,6 @@ class EventsController < ApplicationController
   end
 
   private
-  
-  def auth
-    {
-      username: Rails.application.config.finda_user_name,
-      password: Rails.application.config.finda_password
-    }
-  end
 
   def collection
     @collection ||= events_filter.results
@@ -173,7 +176,7 @@ class EventsController < ApplicationController
   end
 
   def filter
-    @filter ||= EventFindaRuby::Events.new(auth)
+    @filter ||= EventFindaRuby::Events.new
   end
 end
 ```
