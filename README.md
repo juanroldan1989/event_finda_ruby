@@ -44,7 +44,7 @@ Setup those credentials within an initializer:
 ```ruby
 # event_finda_initializer.rb
 
-EventFindaRuby.configure do |configure|
+EventFindaRuby.configure do |config|
   config.username = "event_finda"
   config.password = "123123"
 end
