@@ -1,5 +1,16 @@
 # Change log
 
+## [v0.3.0] - 2016-04-25
+
+### Added
+* "Configuration" module setup to provide ".configure" method as part of public gem API.
+* Gem's ".configure" method can be implemented within an initializer file.
+* Tests added for "Configuration" module.
+
+### Changed
+* All 4 resources implement 'Configuration' module.
+* All tests have been updated to comply with this implementation.
+
 ## [v0.2.8] - 2016-04-12
 
 ### Added
