@@ -7,12 +7,10 @@ class Base
   RESOURCE_SLUG = "base"
 
   attr_reader :api_extension
-  attr_reader :auth
   attr_reader :filters
 
-  def initialize(auth)
+  def initialize
     @api_extension = "json"
-    @auth          = auth
     @filters       = { "rows" => "20" }
   end
 
@@ -60,6 +58,13 @@ class Base
 
   def apply_filter(filter_name, value)
     filters[filter_name] = value
+  end
+
+  def auth
+    {
+      username: EventFindaRuby.configuration.username,
+      password: EventFindaRuby.configuration.password
+    }
   end
 
   def get_filters

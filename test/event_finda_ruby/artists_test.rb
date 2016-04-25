@@ -2,8 +2,7 @@ require "test_helper"
 
 describe EventFindaRuby::Artists do
   before do
-    auth    = { username: "event_finda", password: "123123" }
-    @filter = EventFindaRuby::Artists.new(auth)
+    @filter = EventFindaRuby::Artists.new
   end
 
   it "should allow to see current URL" do

@@ -2,8 +2,7 @@ require "test_helper"
 
 describe EventFindaRuby::Locations do
   before do
-    auth    = { username: "event_finda", password: "123123" }
-    @filter = EventFindaRuby::Locations.new(auth)
+    @filter = EventFindaRuby::Locations.new
   end
 
   it "should allow to see current URL" do

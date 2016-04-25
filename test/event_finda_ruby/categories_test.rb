@@ -2,8 +2,7 @@ require "test_helper"
 
 describe EventFindaRuby::Categories do
   before do
-    auth    = { username: "event_finda", password: "123123" }
-    @filter = EventFindaRuby::Categories.new(auth)
+    @filter = EventFindaRuby::Categories.new
   end
 
   it "should allow to see current URL" do
