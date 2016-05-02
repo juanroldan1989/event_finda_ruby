@@ -17,7 +17,7 @@ A Ruby client for the EventFinda API: www.eventfinda.co.nz
 * Currently supports a variety of the API methods for `Events`, `Categories`, `Artists` and `Locations`  resources.
 * Modular design allows for working with only parts of API you need.
 * URL generation process fully tested when applying filters for each request.
-* API integration tests recorded and fully tested using [vcr](https://github.com/vcr/vcr) gem: fast tests (first HTTP request is real and it's response is stored for future runs), deterministic (tests will continue to pass, even if you are offline, or eventfinda.co.nz goes down for maintenance) and accurate (responses will contain the same headers and body you get from a real request).
+* API integration tests recorded and fully tested using [VCR](https://github.com/vcr/vcr) gem: fast tests (first HTTP request is real and it's response is stored for future runs), deterministic (tests will continue to pass, even if you are offline, or eventfinda.co.nz goes down for maintenance) and accurate (responses will contain the same headers and body you get from a real request).
 
 ## Installation
 
