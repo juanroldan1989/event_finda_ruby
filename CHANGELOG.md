@@ -1,5 +1,10 @@
 # Change log
 
+## [v0.3.1] - 2016-05-09
+
+### Added
+* Ruby versions setup: '1.9.3' and '2.1.2'.
+
 ## [v0.3.0] - 2016-04-25
 
 ### Added
