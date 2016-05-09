@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
   s.homepage    = "http://rubygems.org/gems/event_finda_ruby"
   s.license     = "MIT"
 
+  s.required_ruby_version = ">= 1.9.2"
+
   s.add_dependency "httparty",  "~> 0.13.7"
 
   s.add_development_dependency "vcr",     "~> 3.0.1"
