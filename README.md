@@ -180,6 +180,7 @@ class EventsController < ApplicationController
   end
 end
 ```
+A working example can be found here: [My Budget App](https://github.com/juanroldan1989/my-budget-app)
 
 ## 5. Work in progress
 
