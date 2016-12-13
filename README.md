@@ -190,6 +190,6 @@ end
 
 Questions or problems? Please post them on the [issue tracker](https://github.com/juanroldan1989/event_finda_ruby/issues). You can contribute changes by forking the project and submitting a pull request. You can ensure the tests are passing by running `bundle` and `rake`.
 
-## 7. License
+## 7. Copyright
 
-[MIT](http://opensource.org/licenses/MIT)
+Copyright © 2016 Juan Roldan. See LICENSE.txt for further details.
