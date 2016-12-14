@@ -184,7 +184,6 @@ A working example can be found here: [My Budget App](https://github.com/juanrold
 
 ## 5. Work in progress
 
-- Caching implementation when executing the same API request twice.
 - API timeout handling scenarios.
 
 ## 6. Development
