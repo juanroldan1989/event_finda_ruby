@@ -6,6 +6,7 @@
 [![Gem Version](https://badge.fury.io/rb/event_finda_ruby.svg)](https://badge.fury.io/rb/event_finda_ruby)
 [![Code Climate](https://codeclimate.com/github/juanroldan1989/event_finda_ruby/badges/gpa.svg)](https://codeclimate.com/github/juanroldan1989/event_finda_ruby)
 [![Build Status](https://travis-ci.org/juanroldan1989/event_finda_ruby.svg?branch=master)](https://travis-ci.org/juanroldan1989/event_finda_ruby)
+[![Dependency Status](https://gemnasium.com/badges/github.com/juanroldan1989/event_finda_ruby.svg)](https://gemnasium.com/github.com/juanroldan1989/event_finda_ruby)
 [![Coverage Status](https://coveralls.io/repos/github/juanroldan1989/event_finda_ruby/badge.svg?branch=master)](https://coveralls.io/github/juanroldan1989/event_finda_ruby?branch=master)
 [![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/event_finda_ruby/0.3.1?type=total&color=brightgreen)](https://rubygems.org/gems/event_finda_ruby)
 
