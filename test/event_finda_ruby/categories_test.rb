@@ -36,7 +36,7 @@ describe EventFindaRuby::Categories do
         first_category["name"].must_equal                 "All Events"
         first_category["url_slug"].must_equal             "whatson"
         first_category["parent_id"].must_equal            nil
-        first_category["count_current_events"].must_equal 7054
+        first_category["count_current_events"].must_equal 4882
       end
     end
   end

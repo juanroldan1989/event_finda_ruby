@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://event_finda:123123@api.eventfinda.co.nz/v2/events.json?rows=1
+    uri: http://api.eventfinda.co.nz/v2/events.json?rows=1
     body:
       encoding: US-ASCII
       string: ''
@@ -13,6 +13,8 @@ http_interactions:
       - "*/*"
       User-Agent:
       - Ruby
+      Authorization:
+      - Basic bXlidWRnZXRhcHA6OG0zeGozZHpicmMy
   response:
     status:
       code: 200
@@ -21,184 +23,70 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 12 Apr 2016 10:00:34 GMT
+      - Sat, 07 Jan 2017 23:02:27 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Vary:
-      - Accept-Encoding
-      Expires:
-      - Tue, 12 Apr 2016 10:05:34 GMT
-      Last-Modified:
-      - Tue, 12 Apr 2016 10:00:34 GMT
-      Cache-Control:
-      - max-age=300, proxy-revalidate
       Transfer-Encoding:
       - chunked
       Connection:
-      - Keep-Alive
-      Age:
-      - '193'
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=300
+      Expires:
+      - Sat, 07 Jan 2017 23:07:27 GMT
+      Last-Modified:
+      - Sat, 07 Jan 2017 23:02:27 GMT
     body:
       encoding: UTF-8
-      string: '{"@attributes":{"count":7057},"events":[{"id":350269,"url":"http:\/\/www.eventfinda.co.nz\/2016\/mahana\/auckland\/papakura","url_slug":"2016\/mahana\/auckland\/papakura","name":"Mahana","presented_by":"","description":"1960s,
-        East Coast of New Zealand. Two Maori sheep-shearing families, the Mahanas
-        and the Poatas, are longstanding enemies and commercial rivals. 14-year-old
-        Simeon Mahana, the youngest son of the youngest son is in ...","datetime_start":"2016-03-03
-        19:30:00","datetime_end":"2016-04-12 23:59:59","location_summary":"Hawkins
-        Theatre, Auckland","address":"13 Ray Small Drive, Auckland","is_free":false,"is_featured":true,"is_cancelled":false,"restrictions":"M","point":{"lat":-37.0656,"lng":174.9378},"username":"HawkinsTheatre","timezone":"Pacific\/Auckland","location":{"id":1654,"name":"Hawkins
-        Theatre","summary":"Hawkins Theatre, Auckland","url_slug":"auckland-south-hawkins-theatre","is_venue":true,"count_current_events":15,"description":"The
-        Hawkins Theatre - Papakura opened on the 14th July 1990 by Governor General
-        Paul Reeves, and was an exciting step for the community as the first purpose-built
-        facility for the arts in the District. The facility won ...","images":{"@attributes":{"count":10},"images":[{"id":114294,"is_primary":false,"transforms":{"@attributes":{"count":4},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/114294-1654-2.jpg","width":80,"height":34},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/114294-1654-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/114294-1654-8.jpg","width":190,"height":127},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/114294-1654-7.jpg","width":650,"height":280}]}},{"id":223526,"is_primary":false,"transforms":{"@attributes":{"count":4},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223526-1654-2.jpg","width":80,"height":53},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223526-1654-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223526-1654-8.jpg","width":190,"height":127},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223526-1654-7.jpg","width":650,"height":280}]}},{"id":223535,"is_primary":false,"transforms":{"@attributes":{"count":4},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223535-1654-2.jpg","width":80,"height":53},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223535-1654-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223535-1654-8.jpg","width":190,"height":127},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223535-1654-7.jpg","width":650,"height":280}]}},{"id":223536,"is_primary":false,"transforms":{"@attributes":{"count":4},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223536-1654-2.jpg","width":80,"height":53},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223536-1654-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223536-1654-8.jpg","width":190,"height":127},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/223536-1654-7.jpg","width":650,"height":280}]}},{"id":409016,"is_primary":false,"transforms":{"@attributes":{"count":5},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409016-1654-2.jpg","width":80,"height":41},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409016-1654-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409016-1654-8.jpg","width":190,"height":127},{"transformation_id":27,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409016-1654-27.jpg","width":350,"height":350},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409016-1654-7.jpg","width":650,"height":280}]}},{"id":409018,"is_primary":true,"transforms":{"@attributes":{"count":4},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409018-1654-2.jpg","width":80,"height":34},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409018-1654-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409018-1654-8.jpg","width":190,"height":127},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409018-1654-7.jpg","width":650,"height":280}]}},{"id":409019,"is_primary":false,"transforms":{"@attributes":{"count":5},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409019-1654-2.jpg","width":80,"height":41},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409019-1654-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409019-1654-8.jpg","width":190,"height":127},{"transformation_id":27,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409019-1654-27.jpg","width":350,"height":350},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409019-1654-7.jpg","width":650,"height":280}]}},{"id":409020,"is_primary":false,"transforms":{"@attributes":{"count":5},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409020-1654-2.jpg","width":80,"height":41},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409020-1654-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409020-1654-8.jpg","width":190,"height":127},{"transformation_id":27,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409020-1654-27.jpg","width":350,"height":350},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409020-1654-7.jpg","width":650,"height":280}]}},{"id":409021,"is_primary":false,"transforms":{"@attributes":{"count":5},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409021-1654-2.jpg","width":80,"height":41},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409021-1654-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409021-1654-8.jpg","width":190,"height":127},{"transformation_id":27,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409021-1654-27.jpg","width":350,"height":350},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409021-1654-7.jpg","width":650,"height":280}]}},{"id":409022,"is_primary":false,"transforms":{"@attributes":{"count":5},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409022-1654-2.jpg","width":80,"height":41},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409022-1654-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409022-1654-8.jpg","width":190,"height":127},{"transformation_id":27,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409022-1654-27.jpg","width":350,"height":350},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/locations\/transformed\/409022-1654-7.jpg","width":650,"height":280}]}}]},"point":{"lat":-37.0656,"lng":174.9378}},"category":{"id":25,"name":"Film","url_slug":"film","parent_id":1,"count_current_events":79},"datetime_summary":"Tue
-        12 Apr","sessions":{"@attributes":{"count":12},"sessions":[{"id":1361383,"timezone":"Pacific\/Auckland","datetime_start":"2016-03-03
-        19:30:00","datetime_end":"2016-03-03 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":null,"offsale_at":null,"session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1142670,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1114962,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1114967,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1114972,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1114977,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1114982,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Thu  3
-        Mar,  7:30pm"},{"id":1394946,"timezone":"Pacific\/Auckland","datetime_start":"2016-03-09
-        10:00:00","datetime_end":"2016-03-09 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":"","offsale_at":"2016-03-09
-        11:00:00","session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1143409,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143410,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143411,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142812,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142824,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142831,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Wed  9
-        Mar, 10:00am"},{"id":1394947,"timezone":"Pacific\/Auckland","datetime_start":"2016-03-11
-        19:30:00","datetime_end":"2016-03-11 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":"","offsale_at":"2016-03-11
-        18:30:00","session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1143412,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143413,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143414,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142813,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142825,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142832,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Fri
-        11 Mar,  7:30pm"},{"id":1394948,"timezone":"Pacific\/Auckland","datetime_start":"2016-03-16
-        12:30:00","datetime_end":"2016-03-16 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":"","offsale_at":"2016-03-16
-        13:00:00","session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1143415,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143416,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143417,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142814,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142826,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142833,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Wed
-        16 Mar, 12:30pm"},{"id":1394949,"timezone":"Pacific\/Auckland","datetime_start":"2016-03-18
-        10:00:00","datetime_end":"2016-03-18 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":"","offsale_at":"2016-03-18
-        11:00:00","session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1143418,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143419,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143420,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142815,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142827,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142834,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Fri
-        18 Mar, 10:00am"},{"id":1394950,"timezone":"Pacific\/Auckland","datetime_start":"2016-03-21
-        12:30:00","datetime_end":"2016-03-21 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":"","offsale_at":"2016-03-21
-        13:30:00","session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1143421,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143422,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143423,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142816,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142828,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142835,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Mon
-        21 Mar, 12:30pm"},{"id":1394951,"timezone":"Pacific\/Auckland","datetime_start":"2016-03-29
-        10:00:00","datetime_end":"2016-03-29 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":"","offsale_at":"2016-03-29
-        11:00:00","session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1143424,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143425,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143426,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142817,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142829,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142836,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Tue
-        29 Mar, 10:00am"},{"id":1394952,"timezone":"Pacific\/Auckland","datetime_start":"2016-03-30
-        12:30:00","datetime_end":"2016-03-30 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":"","offsale_at":"2016-03-30
-        13:30:00","session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1143427,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143428,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143429,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1143430,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142830,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1142837,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Wed
-        30 Mar, 12:30pm"},{"id":1428035,"timezone":"Pacific\/Auckland","datetime_start":"2016-04-01
-        10:00:00","datetime_end":"2016-04-01 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":null,"offsale_at":null,"session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1176235,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176236,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176237,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176238,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176239,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176240,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Fri  1
-        Apr, 10:00am"},{"id":1428076,"timezone":"Pacific\/Auckland","datetime_start":"2016-04-07
-        12:30:00","datetime_end":"2016-04-07 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":null,"offsale_at":null,"session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1176281,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176282,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176283,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176284,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176285,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176286,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Thu  7
-        Apr, 12:30pm"},{"id":1428093,"timezone":"Pacific\/Auckland","datetime_start":"2016-04-08
-        19:30:00","datetime_end":"2016-04-08 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":null,"offsale_at":"2016-04-08
-        20:00:00","session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1176303,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176304,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176305,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176306,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176307,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176308,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Fri  8
-        Apr,  7:30pm"},{"id":1428110,"timezone":"Pacific\/Auckland","datetime_start":"2016-04-12
-        10:00:00","datetime_end":"2016-04-12 23:59:59","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":null,"offsale_at":null,"session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1176325,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176326,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176327,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176328,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176329,"name":"On
-        the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1176330,"name":"On
-        the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Tue
-        12 Apr, 10:00am"}]},"ticket_types":{"@attributes":{"count":6},"ticket_types":[{"id":440885,"name":"In
-        advance adult","price":"9.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null},{"id":440886,"name":"In
-        advance concession","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null},{"id":440887,"name":"In
-        advance student","price":"7.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":null},{"id":440888,"name":"On
-        the door adult","price":"12.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null},{"id":440889,"name":"On the door concession","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null},{"id":440890,"name":"On the door student","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-03-03
-        18:30:00","offsale_at":null}]},"artists":{"@attributes":{"count":0},"artists":[]},"web_sites":{"@attributes":{"count":1},"web_sites":[{"url":"http:\/\/www.hawkinstheatre.co.nz","name":"Hawkins
-        Theatre"}]},"images":{"@attributes":{"count":5},"images":[{"id":767369,"is_primary":true,"transforms":{"@attributes":{"count":5},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767369-350269-2.jpg","width":80,"height":45},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767369-350269-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767369-350269-8.jpg","width":190,"height":127},{"transformation_id":27,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767369-350269-27.jpg","width":350,"height":350},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767369-350269-7.jpg","width":650,"height":280}]}},{"id":753025,"is_primary":false,"transforms":{"@attributes":{"count":3},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/753025-350269-2.jpg","width":80,"height":53},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/753025-350269-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/753025-350269-8.jpg","width":190,"height":127}]}},{"id":767304,"is_primary":false,"transforms":{"@attributes":{"count":3},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767304-350269-2.jpg","width":80,"height":64},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767304-350269-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767304-350269-8.jpg","width":190,"height":127}]}},{"id":767305,"is_primary":false,"transforms":{"@attributes":{"count":3},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767305-350269-2.jpg","width":80,"height":49},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767305-350269-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767305-350269-8.jpg","width":190,"height":127}]}},{"id":767306,"is_primary":false,"transforms":{"@attributes":{"count":3},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767306-350269-2.jpg","width":80,"height":44},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767306-350269-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/767306-350269-8.jpg","width":190,"height":127}]}}]}}]}'
+      string: '{"@attributes":{"count":4875},"events":[{"id":390907,"url":"http:\/\/www.eventfinda.co.nz\/2017\/southern-nationals-including-mike-pero-new-zealand-grand-prix\/christchurch","url_slug":"2017\/southern-nationals-including-mike-pero-new-zealand-grand-prix\/christchurch","name":"Southern
+        Nationals ","presented_by":"","description":"The first event in the four events
+        NZ Motorcycle Road Race Series for 2017. The event features a range of exciting
+        action across the amazing Superbikes, Superstock 1000, Supersport, Superlite,
+        Sidecars, Pro Twins, 125 ...","datetime_start":"2017-01-07 09:00:00","datetime_end":"2017-01-08
+        17:00:00","location_summary":"Mike Pero Motorsport Park, Christchurch","address":"107
+        Hasketts Road, Templeton, Christchurch","is_free":false,"is_featured":true,"is_cancelled":false,"restrictions":"All
+        Ages","point":{"lat":-43.5326,"lng":172.4854},"username":"robertc72","timezone":"Pacific\/Auckland","location":{"id":17277,"name":"Mike
+        Pero Motorsport Park","summary":"Mike Pero Motorsport Park, Christchurch","url_slug":"mike-pero-motorsport-park-christchurch-city","is_venue":true,"count_current_events":6,"description":"","images":{"@attributes":{"count":1},"images":[{"id":null,"is_primary":true,"transforms":{"@attributes":{"count":5},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/images\/global\/iconVenue-2.png","width":80,"height":80},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/images\/global\/iconVenue-15.png","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/images\/global\/iconVenue-8.png","width":190,"height":127},{"transformation_id":27,"url":"http:\/\/cdn.eventfinda.co.nz\/images\/global\/iconVenue-27.png","width":350,"height":350},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/images\/global\/iconVenue-7.png","width":650,"height":280}]}}]},"point":{"lat":-43.5326,"lng":172.4854}},"category":{"id":46,"name":"Motorsport","url_slug":"sports-outdoors-motorsport","parent_id":7,"count_current_events":84},"datetime_summary":"Sun  8
+        Jan","sessions":{"@attributes":{"count":2},"sessions":[{"id":1547895,"timezone":"Pacific\/Auckland","datetime_start":"2017-01-07
+        09:00:00","datetime_end":"2017-01-07 17:00:00","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":null,"offsale_at":null,"event_summary":"Southern
+        Nationals ","session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1324851,"name":"Very
+        Early Bird Adult Day Pass","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":"2016-11-30
+        09:00:00","is_sold_out":false,"is_limited_remaining":false},{"id":1324853,"name":"Very
+        Early Bird Child Day Pass","price":"1.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":"2016-11-30
+        09:00:00","is_sold_out":false,"is_limited_remaining":false},{"id":1285170,"name":"Early
+        Bird Adult Day Pass","price":"15.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-11-30
+        09:00:00","offsale_at":"2017-01-01 09:00:00","is_sold_out":false,"is_limited_remaining":false},{"id":1285172,"name":"Early
+        Bird Child Day Pass","price":"5.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-11-30
+        09:00:00","offsale_at":"2017-01-01 09:00:00","is_sold_out":false,"is_limited_remaining":false},{"id":1285185,"name":"Adult
+        Day Pass","price":"20.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2017-01-01
+        09:00:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1285176,"name":"Child
+        Day Pass","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2017-01-01
+        09:00:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Sat  7
+        Jan,  9:00am -  5:00pm"},{"id":1547896,"timezone":"Pacific\/Auckland","datetime_start":"2017-01-08
+        09:00:00","datetime_end":"2017-01-08 17:00:00","is_cancelled":false,"is_ticketed":true,"is_currently_onsale":false,"is_for_tickets_only":false,"ticketing_label":null,"offsale_at":null,"event_summary":"Southern
+        Nationals ","session_tickets":{"@attributes":{"count":6},"session_tickets":[{"id":1324850,"name":"Very
+        Early Bird Adult Day Pass","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":"2016-11-30
+        09:00:00","is_sold_out":false,"is_limited_remaining":false},{"id":1324852,"name":"Very
+        Early Bird Child Day Pass","price":"1.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":null,"offsale_at":"2016-11-30
+        09:00:00","is_sold_out":false,"is_limited_remaining":false},{"id":1285171,"name":"Early
+        Bird Adult Day Pass","price":"15.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-11-30
+        09:00:00","offsale_at":"2017-01-01 09:00:00","is_sold_out":false,"is_limited_remaining":false},{"id":1285173,"name":"Early
+        Bird Child Day Pass","price":"5.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2016-11-30
+        09:00:00","offsale_at":"2017-01-01 09:00:00","is_sold_out":false,"is_limited_remaining":false},{"id":1285186,"name":"Adult
+        Day Pass","price":"20.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2017-01-01
+        09:00:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false},{"id":1285177,"name":"Child
+        Day Pass","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2017-01-01
+        09:00:00","offsale_at":null,"is_sold_out":false,"is_limited_remaining":false}]},"datetime_summary":"Sun  8
+        Jan,  9:00am -  5:00pm"}]},"ticket_types":{"@attributes":{"count":4},"ticket_types":[{"id":479837,"name":"Adult
+        Weekend Pass","price":"35.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2017-01-01
+        09:00:00","offsale_at":null},{"id":479841,"name":"Child Weekend Pass","price":"10.00","is_ticketed":true,"description":"Under
+        5 Free","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2017-01-01
+        09:00:00","offsale_at":null},{"id":479842,"name":"Adult Day Pass","price":"20.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2017-01-01
+        09:00:00","offsale_at":null},{"id":479836,"name":"Child Day Pass","price":"10.00","is_ticketed":true,"description":"","minimum_purchase_quantity":1,"is_addon":false,"onsale_at":"2017-01-01
+        09:00:00","offsale_at":null}]},"artists":{"@attributes":{"count":0},"artists":[]},"web_sites":{"@attributes":{"count":1},"web_sites":[{"url":"http:\/\/www.nzsuperbikes.nz","name":"NZ
+        Superbikes & Road Race Championships Website"}]},"images":{"@attributes":{"count":1},"images":[{"id":874919,"is_primary":true,"transforms":{"@attributes":{"count":4},"transforms":[{"transformation_id":2,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/874919-390907-2.jpg","width":80,"height":34},{"transformation_id":15,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/874919-390907-15.jpg","width":75,"height":75},{"transformation_id":8,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/874919-390907-8.jpg","width":190,"height":127},{"transformation_id":7,"url":"http:\/\/cdn.eventfinda.co.nz\/uploads\/events\/transformed\/874919-390907-7.jpg","width":650,"height":280}]}}]}}]}'
     http_version: 
-  recorded_at: Tue, 12 Apr 2016 10:03:46 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Sat, 07 Jan 2017 23:01:19 GMT
+recorded_with: VCR 3.0.3

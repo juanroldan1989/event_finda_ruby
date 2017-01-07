@@ -84,10 +84,10 @@ describe EventFindaRuby::Locations do
         # location's primary fields
         first_location["id"].must_equal                   574
         first_location["name"].must_equal                 "New Zealand"
-        first_location["summary"].must_equal              "New Zealand"
+        first_location["summary"].must_equal              "New Zealand, New Zealand"
         first_location["url_slug"].must_equal             "new-zealand"
         first_location["is_venue"].must_equal             false
-        first_location["count_current_events"].must_equal 7054
+        first_location["count_current_events"].must_equal 4882
       end
     end
   end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://event_finda:123123@api.eventfinda.co.nz/v2/locations.json?rows=1
+    uri: http://api.eventfinda.co.nz/v2/locations.json?rows=1
     body:
       encoding: US-ASCII
       string: ''
@@ -13,6 +13,8 @@ http_interactions:
       - "*/*"
       User-Agent:
       - Ruby
+      Authorization:
+      - Basic bXlidWRnZXRhcHA6OG0zeGozZHpicmMy
   response:
     status:
       code: 200
@@ -21,27 +23,25 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 12 Apr 2016 10:12:17 GMT
+      - Sat, 07 Jan 2017 23:02:28 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Vary:
-      - Accept-Encoding
-      Expires:
-      - Tue, 12 Apr 2016 10:17:17 GMT
-      Last-Modified:
-      - Tue, 12 Apr 2016 10:12:17 GMT
-      Cache-Control:
-      - max-age=300, proxy-revalidate
       Transfer-Encoding:
       - chunked
       Connection:
-      - Keep-Alive
-      Age:
-      - '56'
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=300
+      Expires:
+      - Sat, 07 Jan 2017 23:07:28 GMT
+      Last-Modified:
+      - Sat, 07 Jan 2017 23:02:28 GMT
     body:
       encoding: UTF-8
-      string: '{"@attributes":{"count":19953},"locations":[{"id":574,"name":"New Zealand","summary":"New
-        Zealand","url_slug":"new-zealand","is_venue":false,"count_current_events":7054}]}'
+      string: '{"@attributes":{"count":21754},"locations":[{"id":574,"name":"New Zealand","summary":"New
+        Zealand, New Zealand","url_slug":"new-zealand","is_venue":false,"count_current_events":4882}]}'
     http_version: 
-  recorded_at: Tue, 12 Apr 2016 10:13:13 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Sat, 07 Jan 2017 23:01:20 GMT
+recorded_with: VCR 3.0.3

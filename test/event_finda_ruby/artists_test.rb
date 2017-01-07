@@ -64,7 +64,7 @@ describe EventFindaRuby::Artists do
         category["name"].must_equal                 "Folk"
         category["url_slug"].must_equal             "folk"
         category["parent_id"].must_equal            6
-        category["count_current_events"].must_equal 84
+        category["count_current_events"].must_equal 53
       end
     end
   end
