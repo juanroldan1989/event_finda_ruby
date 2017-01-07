@@ -2,8 +2,8 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "rake", "~> 10.4.2"
+gem "rake", "~> 12.0.0"
 
 group :metrics do
-  gem "coveralls", "~> 0.8.13"
+  gem "coveralls", "~> 0.8.17"
 end
