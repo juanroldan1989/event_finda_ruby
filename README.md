@@ -6,8 +6,10 @@
 [![Gem Version](https://badge.fury.io/rb/event_finda_ruby.svg)](https://badge.fury.io/rb/event_finda_ruby)
 [![Code Climate](https://codeclimate.com/github/juanroldan1989/event_finda_ruby/badges/gpa.svg)](https://codeclimate.com/github/juanroldan1989/event_finda_ruby)
 [![Build Status](https://travis-ci.org/juanroldan1989/event_finda_ruby.svg?branch=master)](https://travis-ci.org/juanroldan1989/event_finda_ruby)
+[![Dependency Status](https://gemnasium.com/badges/github.com/juanroldan1989/event_finda_ruby.svg)](https://gemnasium.com/github.com/juanroldan1989/event_finda_ruby)
 [![Coverage Status](https://coveralls.io/repos/github/juanroldan1989/event_finda_ruby/badge.svg?branch=master)](https://coveralls.io/github/juanroldan1989/event_finda_ruby?branch=master)
 [![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/event_finda_ruby/0.3.1?type=total&color=brightgreen)](https://rubygems.org/gems/event_finda_ruby)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 A Ruby client for the EventFinda API: www.eventfinda.co.nz
 
@@ -180,10 +182,10 @@ class EventsController < ApplicationController
   end
 end
 ```
+A working example can be found here: [My Budget App](https://github.com/juanroldan1989/my-budget-app)
 
 ## 5. Work in progress
 
-- Caching implementation when executing the same API request twice.
 - API timeout handling scenarios.
 
 ## 6. Development
@@ -192,4 +194,4 @@ Questions or problems? Please post them on the [issue tracker](https://github.co
 
 ## 7. Copyright
 
-Copyright © 2016 Juan Roldan. See LICENSE.txt for further details.
+Copyright © 2016 Juan Roldan. See [LICENSE.txt](https://github.com/juanroldan1989/event_finda_ruby/blob/master/LICENSE.txt) for further details.
