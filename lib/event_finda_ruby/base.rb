@@ -76,7 +76,7 @@ class Base
   end
 
   def response
-    HTTParty.get("#{url}", basic_auth: auth)
+    HTTParty.get(url, basic_auth: auth)
   end
 
   def set_keywords_or(keywords)
