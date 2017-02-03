@@ -39,11 +39,11 @@ class Base
   end
 
   def results
-    @results = response["#{self.class::RESOURCE_SLUG}"]
+    @results = response[resource_slug]
   end
 
   def url
-    "#{BASE_URL}#{self.class::RESOURCE_SLUG}.#{api_extension}?#{get_filters}"
+    "#{BASE_URL}#{resource_slug}.#{api_extension}?#{get_filters}"
   end
 
   def with_extension(extension)
@@ -69,6 +69,10 @@ class Base
 
   def get_filters
     filters.map { |k,v| "#{k}=#{v}" }.join("&")
+  end
+
+  def resource_slug
+    self.class::RESOURCE_SLUG
   end
 
   def response
