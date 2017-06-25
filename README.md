@@ -8,7 +8,7 @@
 [![Build Status](https://travis-ci.org/juanroldan1989/event_finda_ruby.svg?branch=master)](https://travis-ci.org/juanroldan1989/event_finda_ruby)
 [![Dependency Status](https://gemnasium.com/badges/github.com/juanroldan1989/event_finda_ruby.svg)](https://gemnasium.com/github.com/juanroldan1989/event_finda_ruby)
 [![Coverage Status](https://coveralls.io/repos/github/juanroldan1989/event_finda_ruby/badge.svg?branch=master)](https://coveralls.io/github/juanroldan1989/event_finda_ruby?branch=master)
-[![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/event_finda_ruby/0.3.3?type=total&color=brightgreen)](https://rubygems.org/gems/event_finda_ruby)
+[![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/event_finda_ruby/0.3.4?type=total&color=brightgreen)](https://rubygems.org/gems/event_finda_ruby)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 A Ruby client for the EventFinda API: www.eventfinda.co.nz
@@ -32,7 +32,7 @@ gem install event_finda_ruby
 or put it in your Gemfile and run `bundle install`:
 
 ```ruby
-gem "event_finda_ruby", "~> 0.3.3"
+gem "event_finda_ruby", "~> 0.3.4"
 ```
 
 ## 1. Usage
