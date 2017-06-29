@@ -11,7 +11,7 @@
 [![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/event_finda_ruby/0.3.4?type=total&color=brightgreen)](https://rubygems.org/gems/event_finda_ruby)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-A Ruby client for the EventFinda API: www.eventfinda.co.nz
+Ruby client for EventFinda API: www.eventfinda.co.nz
 
 ## Features
 
