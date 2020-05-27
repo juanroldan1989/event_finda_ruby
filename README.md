@@ -194,4 +194,4 @@ Questions or problems? Please post them on the [issue tracker](https://github.co
 
 ## 7. Copyright
 
-Copyright © 2017 Juan Roldan. See [LICENSE.txt](https://github.com/juanroldan1989/event_finda_ruby/blob/master/LICENSE.txt) for further details.
+Copyright © 2020 Juan Roldan. See [LICENSE.txt](https://github.com/juanroldan1989/event_finda_ruby/blob/master/LICENSE.txt) for further details.
