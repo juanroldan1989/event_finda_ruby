@@ -79,6 +79,32 @@ class Base
     HTTParty.get(url, basic_auth: auth)
   end
 
+  # TODO: work in progress with exception catching
+  # https://github.com/hexgnu/linkedin/blob/master/lib/linked_in/helpers/request.rb
+  # https://github.com/stripe/stripe-ruby/blob/master/lib/stripe.rb#L76-L103
+  # https://github.com/stripe/stripe-ruby/blob/master/lib/stripe.rb#L228-L264
+
+  def response_2
+    result = []
+
+    begin
+      result = HTTParty.get("#{url}", basic_auth: auth)
+
+    rescue SocketError => error
+      raise "Exception raised! #{error}"
+
+    rescue Net::OpenTimeout, Net::ReadTimeout, Net::HTTPBadResponse,
+           Net::HTTPHeaderSyntaxError, Net::ProtocolError => error
+      raise "Exception raised! #{error}"
+
+    rescue Timeout::Error => error
+      raise "Exception raised! #{error}"
+    end
+
+    result
+  end
+
+
   def set_keywords_or(keywords)
     keywords.join("+OR+")
   end
